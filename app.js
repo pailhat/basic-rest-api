@@ -26,9 +26,8 @@ mongoose.connect(
         useNewUrlParser: true,
         })
         .then(() => console.log('DB Connected!'))
-        .catch(err => {
-        console.log(err);
-});
+        .catch(err => {console.log(err);});
 
-//How do we start listening to the server?
+        
+//Listen on port 3000
 app.listen(3000);
